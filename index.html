@@ -1,24 +1,295 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 9.5: Mecanismos Avanzados</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 9.5: Mecanismos Avanzados</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes exploren y apliquen 'Mates' complejos (ej. 'Planar', 'Cylindrical', 'Gear relation').</li>
+                                        <li>Que creen mecanismos funcionales con múltiples grados de libertad.</li>
+                                        <li>Que enfrenten y resuelvan un desafío de diseño de un mecanismo complejo y funcional.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un ensamblaje funcional en Onshape que demuestra un movimiento compuesto (ej. engranajes girando en direcciones opuestas), utilizando al menos un mate o relación avanzada.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de Onshape para cada alumno.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que todos los sistemas (Internet, Onshape, Xolo) están funcionales.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Entender los principios básicos de los mates 'Cylindrical' y 'Planar', y la relación 'Gear'. No necesita ser un experto, pero sí entender el concepto.</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener un archivo de Onshape con un ejemplo simple de cada uno de los tres desafíos (engranajes, cardán, biela-manivela) para poder demostrarlo rápidamente o guiar a los estudiantes.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como un paso hacia la complejidad del mundo real y los sistemas cinemáticos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta la sesión como el momento de graduarse de mecanismos simples a sistemas complejos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos. Dominan el movimiento en un solo eje. Pero el mundo real es más complejo. Piensen en una bola de joystick o en una grúa que gira y se extiende al mismo tiempo. Estos son movimientos con múltiples grados de libertad. Hoy, su desafío es graduarse de mecanismos simples a sistemas cinemáticos. Aumentaremos la complejidad, y con ella, su capacidad como diseñadores.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo: 'Hola Xolo, listo para la Misión 9.5', seguido de su nombre, perfil y gustos. Esperen su confirmación para enfrentar el desafío de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Presentar los mates avanzados y el desafío de construir un mecanismo con movimiento compuesto.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentando Mates Avanzados y el Desafío ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce los mates que combinan movimientos y presenta el desafío práctico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ya conocen 'Revolute' (rotación) y 'Slider' (traslación). Hoy exploraremos Mates que combinan movimientos, como 'Cylindrical' (giro y deslizamiento) o 'Planar' (deslizamiento y giro en un plano). Su desafío hoy es construir un mecanismo que requiera al menos dos tipos diferentes de Mates, con al menos uno avanzado, para lograr un movimiento compuesto y funcional. Por ejemplo, un sistema de engranajes o una articulación.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de este taller es dominar la complejidad. Al final, podrán decir: <strong>'Yo puedo analizar un movimiento complejo, seleccionar y aplicar los Mates avanzados necesarios para replicarlo, y crear un ensamblaje funcional con múltiples grados de libertad.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Desafíos de Movimiento) ⏰ 10 minutos</h2>
+                <p>Fase de diálogo donde Xolo actúa como "Provocador de Desafíos", y los estudiantes aprenden a consultar al Advisor sobre temas complejos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Elección del Desafío Cinemático ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador verbaliza los desafíos propuestos por Xolo, y los estudiantes eligen uno.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Entramos al A.I. GYM. El movimiento simple es predecible, el complejo crea funciones emergentes. Xolo les propone tres desafíos clásicos de la ingeniería mecánica. Elijan uno: 1. **El Engranaje:** transmitir rotación. 2. **La Articulación Universal (Cardán):** conectar ejes no alineados. 3. **El Mecanismo Biela-Manivela:** convertir rotación en vaivén. Analícenlo y planifiquen su estrategia de Mates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Consulta Técnica Avanzada ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador guía a los estudiantes sobre cómo formular preguntas complejas al Onshape AI Advisor.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para estos desafíos, la consulta al Onshape AI Advisor será su mejor aliado. No duden en formular preguntas de alto nivel. Por ejemplo, para el desafío de engranajes, pregunten: <strong>'Explain the 'Gear' relation in Onshape assemblies'</strong>. Para el de la articulación, pregunten: <strong>'How to create a universal joint mechanism?'</strong>. El Advisor está entrenado para guiar en estos escenarios complejos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Construyendo el Mecanismo Complejo) ⏰ 22 minutos</h2>
+                <p>Fase de trabajo práctico intensivo para planificar, modelar, ensamblar y depurar un mecanismo complejo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Planificación, Modelado y Ensamblaje ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes planifican, modelan las piezas necesarias y las insertan en un nuevo ensamblaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Basado en el desafío que eligieron, hagan un boceto rápido de las piezas y su movimiento. Luego, creen esas piezas en un Part Studio y creen un nuevo ensamblaje para insertarlas. Tienen 10 minutos para esta fase de preparación.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Aplicación de Mates y Depuración de Sistemas ⏰ 12 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Los estudiantes aplican los mates básicos y avanzados, y depuran la interacción del sistema completo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Ahora, a dar vida al mecanismo. Siguiendo su plan, apliquen los Mates. Fijen la base, usen Mates básicos para los movimientos primarios, y luego investiguen con el Advisor para aplicar la relación avanzada que sincroniza el movimiento. Este paso requerirá varios intentos y depuración. Arrastren un componente y observen si el sistema completo reacciona como esperan. Depurar un sistema es más complejo que depurar una pieza.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final de "Showcase de Mecanismos" donde los equipos demuestran sus creaciones y explican su proceso.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador guía una reflexión sobre el desafío técnico superado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su mecanismo funcional. Prepárense para la demo. Piensen: <strong>¿Qué desafío eligieron y cuál fue el Mate o relación clave que hizo que todo funcionara? ¿Cuál fue el paso más difícil en la depuración de este sistema?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Showcase de Mecanismos) ⏰ 2 minutos</h3>
+                            <p>Los estudiantes hacen una demostración en vivo de sus mecanismos complejos en parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, es hora del "Showcase de Mecanismos". Compartan su pantalla y hagan una demostración en vivo. Expliquen el desafío que eligieron y cuál fue la relación clave que lo resolvió. Muestren el movimiento compuesto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador consolida el aprendizaje, destacando el salto a la ingeniería de sistemas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Observen la complejidad que han logrado dominar. Han pasado de piezas únicas a sistemas interactivos con comportamiento emergente. Han demostrado que pueden analizar un problema cinemático, investigar la solución técnica y ejecutarla. Han alcanzado un alto nivel de competencia en diseño mecánico digital. Ahora que entienden la función, estamos listos para la última frontera del diseño: la estética y el rol del juicio humano.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
